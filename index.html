@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>GoodReads App</title>
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <span>
+      <input type="text" name="searchbox" class="searchbox" placeholder="Enter Name Of Book To Search...">
+      <button class="searchbutton">Search</button>
+      </span>
+      <table id="example" class="display" style="width:100%;visibility: hidden;">
+      <thead>
+         <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Average Rating</th>
+         </tr>
+      </thead>
+      <script type="text/javascript" src="script.js"></script>
+   </body>
+</html>

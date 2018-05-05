@@ -1,0 +1,18 @@
+#example_wrapper{
+	margin:50px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.searchbutton {
+	width: 200px;
+    height: 30px;
+}
+.searchbox {
+	width: 600px;
+    height: 24px;
+}
+#example_filter{
+	padding: 8px;
+}
