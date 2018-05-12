@@ -1,7 +1,9 @@
 let ObjData = {};
 ObjData.datatodisplay = [];
+let table;
 
 $('.searchbutton').click(function() {
+
     let bookname = $('.searchbox').val();
     $.get('https://www.goodreads.com/search/index.xml?key=Qpw6EqBlH1ybtvOR9o3RPg&q=' + bookname, function(datavalue) {
         let jsondata = xmlToJson(datavalue);
@@ -16,6 +18,7 @@ $('.searchbutton').click(function() {
             ObjData.datatodisplay.push(temp);
 
         }
+        $("#example").dataTable().fnDestroy();
         $('#example').dataTable({
             data: ObjData.datatodisplay,
             columns: [{
@@ -24,7 +27,8 @@ $('.searchbutton').click(function() {
                 'data': 'Author'
             }, {
                 'data': 'average_rating'
-            }]
+            }],
+            
 
         })
         if (individualdata.length) {
